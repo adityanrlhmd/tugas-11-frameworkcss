@@ -1,0 +1,10 @@
+@import 'section/gambar';
+@import 'section/jadwal';
+@import 'section/rekomendasi';
+@import 'section/news';
+@import 'section/galeri';
+@import 'section/quiz';
+
+main {
+    border-bottom: 4px solid $secondary-color;
+}

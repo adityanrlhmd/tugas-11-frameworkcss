@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Metropolis Medium";
+    src: url("../font/metropolis/Metropolis-Medium.otf");
+}
+
+@font-face {
+    font-family: "NexaW01-Black";
+    src: url("../font/Nexa/NexaW01-Black.ttf");
+}
+
+$primary-color: #ffffff;
+$secondary-color: rgb(16, 50, 163);
+$linear-color: linear-gradient(to right, #63aad7 1%, #125f97 100%);
+$nav-color: #3a3a3a;
+
+@mixin tittle {
+    background-image: linear-gradient(257deg, #ca76a9, #3854a4);
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 15px 0;
+    position: relative;
+    z-index: 3
+}
+
+h3 {
+    font-family: 'NexaW01-Black';
+}
+
+@import 'header/header';
+@import 'main/main';
+@import 'footer/footer';

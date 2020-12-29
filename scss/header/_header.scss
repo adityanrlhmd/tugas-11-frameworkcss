@@ -1,0 +1,40 @@
+.navbar {
+    font-family: 'Metropolis Medium';
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    .collapse {
+        .navbar-nav {
+            .nav-item {
+                letter-spacing: 0.5px;
+
+                ::after {
+                    display: block;
+                    content: "";
+                    border-bottom: solid 2px $secondary-color;
+                    transform: scaleX(0);
+                    transition: .2s ease-in-out;
+                    transform-origin: 0% 50%;
+                }
+
+                :hover::after {
+                    transform: scaleX(1);
+                }
+
+                #streaming {
+                    border: 2px solid #00247d;
+                    border-radius: 4px;
+                    padding: 0px 10px;
+                    margin-top: 4px;
+                }
+
+                .nav-link {}
+            }
+        }
+    }
+}

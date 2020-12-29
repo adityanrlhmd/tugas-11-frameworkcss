@@ -1,0 +1,87 @@
+.sctv {
+    .container {
+        .row {
+            .col {
+                img {
+                    width: 170px;
+                }
+
+                p {
+                    line-height: 1.4;
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+
+                .d-flex {
+                    .sosmed {
+                        img {
+                            width: 30px;
+                            -webkit-transition: 0.4s ease;
+                            transition: 0.4s ease;
+
+                            &:hover {
+                                -webkit-transform: scale(1.58);
+                                transform: scale(1.58);
+                            }
+                        }
+                    }
+                }
+
+                ul {
+
+                    li {
+                        list-style-type: none;
+                        border: none;
+                        margin: 15px;
+
+                        a {
+                            font-size: 17px;
+                            font-weight: 700;
+                            text-decoration: none;
+                            color: $secondary-color;
+
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sctv {
+        .container {
+            .row {
+                .col {
+                    .logo-sctv {
+                        text-align: center;
+                        margin-left: 28%;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+
+                    .d-flex {
+                        display: block;
+                        margin-left: 33%;
+                    }
+
+                    ul {
+                        li {
+                            margin: 12px;
+
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

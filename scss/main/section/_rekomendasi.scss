@@ -1,0 +1,138 @@
+.rekomendasi {
+    margin-bottom: 150px;
+
+    .container {
+        .title-rekomendasi {
+            background-image: linear-gradient(257deg, #ca76a9, #3854a4);
+            letter-spacing: 1px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0 0 15px 0;
+            position: relative;
+            z-index: 3;
+
+            h3 {
+                font-size: 47px;
+            }
+        }
+
+        ul {
+            overflow: auto;
+
+            li {
+                list-style-type: none;
+                border: none;
+
+                &:nth-child(1) {
+                    padding-left: 0;
+                }
+
+                a {
+                    font-size: 19px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: #3a3a3a;
+
+                    &:hover {
+                        color: #5656c2;
+                    }
+                }
+            }
+        }
+    }
+
+    .movie-rekomendasi {
+        width: 100%;
+        margin-bottom: -15px;
+        background-color: #f0f0f0;
+        font-family: 'metropolis medium';
+
+        .owl-carousel {
+            img {
+                margin-bottom: 20px;
+            }
+
+            .item {
+                padding: 25px;
+                background-color: #f0f0f0;
+                font-weight: 900;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .transparent-left {
+        height: 510px;
+        width: 10%;
+        margin-top: -490px;
+        padding: 40px;
+        position: absolute;
+        background-image: -webkit-gradient(linear, left top, right top, from(#ffffffd7), to(rgba(255, 255, 255, 0)));
+        background-image: linear-gradient(to right, #ffffffd7, rgba(255, 255, 255, 0));
+        z-index: 1;
+    }
+
+    .transparent-right {
+        height: 510px;
+        width: 10%;
+        margin-top: -490px;
+        margin-left: 90%;
+        padding: 40px;
+        position: absolute;
+        background-image: -webkit-gradient(linear, right top, left top, from(#ffffffd7), to(rgba(255, 255, 255, 0)));
+        background-image: linear-gradient(to left, #ffffffd7, rgba(255, 255, 255, 0));
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .rekomendasi {
+        .container {
+            .title-rekomendasi {
+                h3 {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(102, 102, 102, 0.39);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(102, 102, 102, 0.658);
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+    }
+
+    .movie-rekomendasi {
+
+        .owl-carousel {
+            .item {
+                padding: 25px;
+                font-weight: 900;
+                font-size: 20px;
+                margin: 0 50px;
+
+                img {
+                    width: 20rem;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .transparent-left {
+        display: none;
+    }
+
+    .transparent-right {
+        display: none;
+    }
+}

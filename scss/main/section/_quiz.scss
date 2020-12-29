@@ -1,0 +1,97 @@
+.quiz {
+    margin-bottom: 200px;
+
+    .container {
+        .row {
+            .col {
+                .tittle-quiz {
+                    text-align: center;
+                    background-image: linear-gradient(257deg, #ca76a9, #3854a4);
+                    letter-spacing: 1px;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin: 0 0 15px 0;
+                    position: relative;
+                    z-index: 3;
+
+                    h3 {
+                        font-size: 47px;
+                    }
+                }
+            }
+        }
+
+        .bawah {
+            .kotak-quiz {
+                height: 200px;
+                background: #ffffff;
+                -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+
+                .kotak-quiz-isi {
+                    .kotak-quiz-isi-dalam {
+                        background: #f7f5f5;
+                        border: 1px solid #ddd7d770;
+
+                        p {
+                            color: black;
+                            font-size: 20px;
+                        }
+
+                        a {
+                            width: 140px;
+                            text-decoration: none;
+                            position: absolute;
+                            color: #fff;
+                            left: 75%;
+                            font-size: 14px;
+                            font-weight: 200;
+                            text-align: center;
+                            padding: 10px 40px;
+                            border: none;
+                            border-radius: 5px;
+                            background: #63aad7;
+                            background: -webkit-gradient(linear, left top, right top, color-stop(1%, #63aad7), to(#125f97));
+                            background: linear-gradient(to right, #63aad7 1%, #125f97 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .quiz {
+        .container {
+            .row {
+                .col {
+                    .tittle-quiz {
+                        h3 {
+                            font-size: 45px;
+                        }
+                    }
+                }
+            }
+
+            .bawah {
+                .kotak-quiz {
+                    .kotak-quiz-isi {
+                        .kotak-quiz-isi-dalam {
+                            p {}
+
+                            a {
+                                width: 100px;
+                                left: 40%;
+                                font-size: 13px;
+                                padding: 10px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

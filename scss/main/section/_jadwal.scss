@@ -1,0 +1,155 @@
+.jadwal {
+    margin-bottom: 100px;
+
+    .container {
+        .row {
+
+            .tittle-jadwal {
+                text-align: center;
+                background-image: linear-gradient(257deg, #ca76a9, #3854a4);
+                letter-spacing: 1px;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0 0 15px 0;
+                position: relative;
+                z-index: 3;
+                margin-top: 50px;
+
+                h3 {
+                    font-size: 47px;
+                }
+            }
+
+            .col {
+                .box-kiri {
+                    width: 300px;
+                    color: #fff;
+                    text-align: justify;
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ee5e6d), to(#f3a1a1));
+                    background: linear-gradient(to bottom, #ee5e6d 1%, #f3a1a1 100%);
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+
+                    .isi-box-kiri {
+                        padding: 30px;
+
+                        h3 {
+                            font-size: 20px;
+                        }
+
+                    }
+                }
+            }
+
+            .kiri {
+                img {
+                    width: 270px;
+                    border-radius: 8px;
+                }
+            }
+
+            .kanan {
+                width: 417px;
+                -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                background-color: #ffffff;
+
+                h3 {
+                    font-family: 'Metropolis Medium';
+                    margin: 0;
+                    padding: 13px;
+                    color: #ffffff;
+                    background: #63aad7;
+                    background: -webkit-gradient(linear, right top, left top, color-stop(1%, #63aad7), to(#125f97));
+                    background: linear-gradient(to left, #63aad7 1%, #125f97 100%);
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    font-size: 22px;
+
+                    span {
+                        font-family: 'Metropolis';
+
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+                }
+
+                .list-kanan {
+                    height: 400px;
+                    overflow: auto;
+                    padding: 10px;
+
+                    p {
+                        list-style-type: none;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        padding-left: 15px;
+                        border: 0.1px solid #6b66666c;
+                        border-radius: 5px;
+
+                        #garis {
+                            background: #1032a3;
+                            width: 17px;
+                            height: 1px;
+                            margin-right: 5px;
+                        }
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            color: #1032a3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(102, 102, 102, 0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(102, 102, 102, 0.658);
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .jadwal {
+        .container {
+            .row {
+                .tittle-jadwal {
+                    h3 {
+                        font-size: 40px;
+                    }
+                }
+
+                .kiri {
+                    .gambar-kiri {
+                        img {
+                            margin-left: 13%;
+                        }
+                    }
+
+                    .box-kiri {
+                        width: 350px;
+                        margin-left: 5%;
+                        border-radius: 10px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
