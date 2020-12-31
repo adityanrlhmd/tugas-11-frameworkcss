@@ -148,14 +148,19 @@ h3 {
 }
 
 .jadwal .container .row .kanan {
-  width: 417px;
+  width: 380px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #ffffff;
 }
 
-.jadwal .container .row .kanan h3 {
+.jadwal .container .row .kanan .tittle-kanan {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.jadwal .container .row .kanan .tittle-kanan h3 {
   font-family: 'Metropolis Medium';
   margin: 0;
   padding: 13px;
@@ -168,38 +173,46 @@ h3 {
   font-size: 22px;
 }
 
-.jadwal .container .row .kanan h3 span {
+.jadwal .container .row .kanan .tittle-kanan h3 span {
   font-family: 'Metropolis';
 }
 
-.jadwal .container .row .kanan h3 span a {
+.jadwal .container .row .kanan .tittle-kanan h3 span a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.jadwal .container .row .kanan .list-kanan {
+.jadwal .container .row .kanan-isi {
+  width: 380px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #ffffff;
+}
+
+.jadwal .container .row .kanan-isi .list-kanan {
   height: 400px;
   overflow: auto;
   padding: 10px;
 }
 
-.jadwal .container .row .kanan .list-kanan p {
+.jadwal .container .row .kanan-isi .list-kanan p {
   list-style-type: none;
   margin-bottom: 10px;
   padding: 10px;
   padding-left: 15px;
   border: 0.1px solid #6b66666c;
-  border-radius: 5px;
 }
 
-.jadwal .container .row .kanan .list-kanan p #garis {
+.jadwal .container .row .kanan-isi .list-kanan p #garis {
   background: #1032a3;
   width: 17px;
   height: 1px;
   margin-right: 5px;
 }
 
-.jadwal .container .row .kanan .list-kanan p span {
+.jadwal .container .row .kanan-isi .list-kanan p span {
   display: inline-block;
   vertical-align: middle;
   color: #1032a3;
@@ -566,15 +579,15 @@ h3 {
 }
 
 .quiz .container .bawah .kotak-quiz .kotak-quiz-isi .kotak-quiz-isi-dalam a {
-  width: 140px;
+  width: 120px;
   text-decoration: none;
   position: absolute;
   color: #fff;
   left: 75%;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 200;
   text-align: center;
-  padding: 10px 40px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   background: #63aad7;
@@ -589,7 +602,7 @@ h3 {
   .quiz .container .bawah .kotak-quiz .kotak-quiz-isi .kotak-quiz-isi-dalam a {
     width: 100px;
     left: 40%;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 10px;
   }
 }
